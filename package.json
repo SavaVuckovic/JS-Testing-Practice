@@ -1,0 +1,22 @@
+{
+  "name": "js-testing-practice",
+  "version": "1.0.0",
+  "description": "Testing Javascript functions using Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavaVuckovic/JS-Testing-Practice.git"
+  },
+  "author": "Sava Vuckovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SavaVuckovic/JS-Testing-Practice/issues"
+  },
+  "homepage": "https://github.com/SavaVuckovic/JS-Testing-Practice#readme",
+  "dependencies": {
+    "jest": "^23.5.0"
+  }
+}

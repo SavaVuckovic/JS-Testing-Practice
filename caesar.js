@@ -1,4 +1,7 @@
 function caesar(string, times) {
+  if (string.length === 0) {
+    throw new Error('Empty string cannot be encoded!');
+  }
   const result = [];
 
   string.split('').forEach(character => {

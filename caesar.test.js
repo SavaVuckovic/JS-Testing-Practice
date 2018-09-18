@@ -23,3 +23,8 @@ test('rotates words correctly', () => {
 test('doesn\'t affect spaces and punctuation', () => {
   expect(caesar('Example sentence! Another one? Ok.', 21)).toBe('Zsvhkgz nziozixz! Vijoczm jiz? Jf.');
 });
+
+test('prevents empty string from being passed in', () => {
+  const tryEmptyString = () => caesar('', 5);
+  expect(tryEmptyString).toThrowError('Empty string cannot be encoded!');
+});

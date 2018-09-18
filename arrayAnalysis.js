@@ -1,4 +1,8 @@
 function analyze(array) {
+  if (array.length === 0) {
+    throw new Error('Array cannot be empty!');
+  }
+
   return {
     average: calculateAverage(array),
     min: calculateMin(array),

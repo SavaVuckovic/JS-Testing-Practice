@@ -38,8 +38,6 @@ test('performs divide operation', () => {
 });
 
 test('prevents zero division', () => {
-  function tryZeroDivision() {
-    calculator.divide(20, 0);
-  }
+  const tryZeroDivision = () => calculator.divide(20, 0);
   expect(tryZeroDivision).toThrowError('You cannot perform division by zero!');
 });

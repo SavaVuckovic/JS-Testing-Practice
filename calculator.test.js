@@ -1,4 +1,5 @@
-const calculator = require('./calculator');
+const Calculator = require('./calculator');
+const calculator = new Calculator();
 
 test('performs add operation', () => {
   expect(calculator.add(20, 10)).toBe(30);

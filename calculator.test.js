@@ -16,3 +16,10 @@ test('performs multiply operation', () => {
 test('performs divide operation', () => {
   expect(calculator.divide(20, 10)).toBe(2);
 });
+
+test('handles zero division error', () => {
+  function tryZeroDivision() {
+    calculator.divide(20, 0);
+  }
+  expect(tryZeroDivision).toThrowError('You cannot perform division by zero!');
+});

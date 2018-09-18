@@ -12,6 +12,9 @@ class Calculator {
   }
 
   divide(x, y) {
+    if (x === 0 || y === 0) {
+      throw new Error('You cannot perform division by zero!');
+    }
     return x / y;
   }
 }

@@ -1,4 +1,4 @@
-function analyze(array) {
+export default function analyze(array) {
   if (array.length === 0) {
     throw new Error('Array cannot be empty!');
   }
@@ -40,5 +40,3 @@ function calculateLength(array) {
   array.forEach(e => len += 1);
   return len;
 }
-
-module.exports = analyze;

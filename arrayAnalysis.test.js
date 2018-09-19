@@ -1,4 +1,4 @@
-const analyze = require('./arrayAnalysis');
+import analyze from './arrayAnalysis';
 
 test('finds correct average value', () => {
   expect(analyze([0, 1, 2, 3, 4, 5, 6]).average).toBe(3);

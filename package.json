@@ -6,6 +6,11 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SavaVuckovic/JS-Testing-Practice.git"
@@ -18,5 +23,9 @@
   "homepage": "https://github.com/SavaVuckovic/JS-Testing-Practice#readme",
   "dependencies": {
     "jest": "^23.5.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0"
   }
 }

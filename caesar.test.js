@@ -1,4 +1,4 @@
-const caesar = require('./caesar');
+import caesar from './caesar';
 
 test('rotates a lowercase letter correctly', () => {
   expect(caesar('a', 5)).toBe('f');

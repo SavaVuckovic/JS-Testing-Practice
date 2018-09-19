@@ -1,4 +1,4 @@
-class Calculator {
+export default class Calculator {
   add(x, y) {
     return x + y;
   }
@@ -18,5 +18,3 @@ class Calculator {
     return x / y;
   }
 }
-
-module.exports = Calculator;

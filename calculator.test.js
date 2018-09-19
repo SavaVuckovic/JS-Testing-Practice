@@ -1,4 +1,5 @@
-const Calculator = require('./calculator');
+import Calculator from './calculator';
+
 const calculator = new Calculator();
 
 test('performs add operation', () => {
